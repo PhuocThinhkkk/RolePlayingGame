@@ -218,7 +218,7 @@ function BuyHealth(){
     }
 }
 function BuyWeapon(){
-    if(coins >= 30 && (currentWeaponIndex < 2 || sungindex === 1 ) ){
+    if(coins >= 30 && (currentWeaponIndex < 2 || (sungindex === 1 && currentWeaponIndex < 3) ) ){
         
         coins -= 30;
         coinsText.innerHTML = coins;
